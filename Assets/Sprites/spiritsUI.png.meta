@@ -1,0 +1,501 @@
+fileFormatVersion: 2
+guid: d5dec91ce0d434ad0b42d93f64df67a5
+timeCreated: 1459475033
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: spiritsUI_0
+    21300002: spiritsUI_1
+    21300004: spiritsUI_2
+    21300006: spiritsUI_3
+    21300008: spiritsUI_4
+    21300010: spiritsUI_5
+    21300012: spiritsUI_6
+    21300014: spiritsUI_7
+    21300016: spiritsUI_8
+    21300018: spiritsUI_9
+    21300020: spiritsUI_10
+    21300022: spiritsUI_11
+    21300024: spiritsUI_12
+    21300026: spiritsUI_13
+    21300028: spiritsUI_14
+    21300030: spiritsUI_15
+    21300032: spiritsUI_16
+    21300034: spiritsUI_17
+    21300036: spiritsUI_18
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: spiritsUI_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 604
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -92, y: 92}
+        - {x: -92, y: -92}
+        - {x: 92, y: -92}
+        - {x: 92, y: 92}
+      - - {x: -88, y: 88}
+        - {x: 88, y: 88}
+        - {x: 88, y: -88}
+        - {x: -88, y: -88}
+      - - {x: -29, y: 73}
+        - {x: -31, y: 63}
+        - {x: -31, y: -59}
+        - {x: 24, y: -59}
+        - {x: 24, y: 57}
+        - {x: 13, y: 73}
+    - name: spiritsUI_1
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 604
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -92, y: 92}
+        - {x: -92, y: -92}
+        - {x: 92, y: -92}
+        - {x: 92, y: 92}
+      - - {x: -88, y: 88}
+        - {x: 88, y: 88}
+        - {x: 88, y: -88}
+        - {x: -88, y: -88}
+      - - {x: -10, y: 72}
+        - {x: -15, y: 71}
+        - {x: -28, y: 11}
+        - {x: -28, y: -70}
+        - {x: 29, y: -70}
+        - {x: 29, y: 1}
+        - {x: 13, y: 72}
+    - name: spiritsUI_2
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 604
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -92, y: 92}
+        - {x: -92, y: -92}
+        - {x: 92, y: -92}
+        - {x: 92, y: 92}
+      - - {x: -88, y: 88}
+        - {x: 88, y: 88}
+        - {x: 88, y: -88}
+        - {x: -88, y: -88}
+      - - {x: 8, y: 66}
+        - {x: -11, y: 66}
+        - {x: -30, y: 32}
+        - {x: -30, y: -64}
+        - {x: -25, y: -66}
+        - {x: 19, y: -66}
+        - {x: 25, y: -57}
+        - {x: 25, y: 32}
+    - name: spiritsUI_3
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 605
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -92, y: 92}
+        - {x: -92, y: -92}
+        - {x: 92, y: -92}
+        - {x: 92, y: 92}
+      - - {x: -88, y: 88}
+        - {x: 88, y: 88}
+        - {x: 88, y: -88}
+        - {x: -88, y: -88}
+      - - {x: -31, y: -66}
+        - {x: 32, y: -66}
+        - {x: 32, y: -5}
+        - {x: 22, y: 46}
+        - {x: -18, y: 46}
+        - {x: -31, y: -18}
+    - name: spiritsUI_4
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 604
+        width: 183
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -91.5, y: 92}
+        - {x: -91.5, y: -92}
+        - {x: 91.5, y: -92}
+        - {x: 91.5, y: 92}
+      - - {x: -87.5, y: 88}
+        - {x: 87.5, y: 88}
+        - {x: 87.5, y: -88}
+        - {x: -87.5, y: -88}
+      - - {x: -13.5, y: 50}
+        - {x: -38.5, y: 7}
+        - {x: -38.5, y: -64}
+        - {x: 33.5, y: -64}
+        - {x: 33.5, y: -2}
+        - {x: 31.5, y: 15}
+        - {x: 10.5, y: 47}
+        - {x: 4.5, y: 50}
+    - name: spiritsUI_5
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 390
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -92, y: 92}
+        - {x: -92, y: -92}
+        - {x: 92, y: -92}
+        - {x: 92, y: 92}
+      - - {x: -88, y: 88}
+        - {x: 88, y: 88}
+        - {x: 88, y: -88}
+        - {x: -88, y: -88}
+      - - {x: -11, y: 61}
+        - {x: -36, y: 21}
+        - {x: -36, y: -53}
+        - {x: 36, y: -53}
+        - {x: 36, y: 19}
+        - {x: 12, y: 61}
+    - name: spiritsUI_6
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 390
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -92, y: 92}
+        - {x: -92, y: -92}
+        - {x: 92, y: -92}
+        - {x: 92, y: 92}
+      - - {x: -88, y: 88}
+        - {x: 88, y: 88}
+        - {x: 88, y: -88}
+        - {x: -88, y: -88}
+      - - {x: 32, y: 40}
+        - {x: 30, y: 55}
+        - {x: 11, y: 70}
+        - {x: -19, y: 70}
+        - {x: -31, y: 34}
+        - {x: -31, y: -43}
+        - {x: -4, y: -68}
+        - {x: 4, y: -68}
+        - {x: 6, y: -67}
+        - {x: 27, y: -47}
+        - {x: 32, y: -42}
+    - name: spiritsUI_7
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 390
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -92, y: 92}
+        - {x: -92, y: -92}
+        - {x: 92, y: -92}
+        - {x: 92, y: 92}
+      - - {x: -88, y: 88}
+        - {x: 88, y: 88}
+        - {x: 88, y: -88}
+        - {x: -88, y: -88}
+      - - {x: -12, y: 65}
+        - {x: -32, y: 43}
+        - {x: -32, y: -61}
+        - {x: -14, y: -73}
+        - {x: 25, y: -73}
+        - {x: 31, y: -49}
+        - {x: 31, y: 52}
+        - {x: 7, y: 65}
+    - name: spiritsUI_8
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 389
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -92, y: 92}
+        - {x: -92, y: -92}
+        - {x: 92, y: -92}
+        - {x: 92, y: 92}
+      - - {x: -88, y: 88}
+        - {x: 88, y: 88}
+        - {x: 88, y: -88}
+        - {x: -88, y: -88}
+      - - {x: -20, y: 66}
+        - {x: -32, y: 49}
+        - {x: -32, y: -65}
+        - {x: 29, y: -65}
+        - {x: 29, y: 60}
+        - {x: 19, y: 66}
+    - name: spiritsUI_14
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 818
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -92, y: 92}
+        - {x: -92, y: -92}
+        - {x: 92, y: -92}
+        - {x: 92, y: 92}
+      - - {x: -88, y: 88}
+        - {x: 88, y: 88}
+        - {x: 88, y: -88}
+        - {x: -88, y: -88}
+      - - {x: -24, y: 69}
+        - {x: -31, y: 32}
+        - {x: -31, y: -60}
+        - {x: -27, y: -62}
+        - {x: 21, y: -62}
+        - {x: 30, y: -51}
+        - {x: 30, y: 33}
+        - {x: 15, y: 69}
+    - name: spiritsUI_15
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 818
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -92, y: 92}
+        - {x: -92, y: -92}
+        - {x: 92, y: -92}
+        - {x: 92, y: 92}
+      - - {x: -88, y: 88}
+        - {x: 88, y: 88}
+        - {x: 88, y: -88}
+        - {x: -88, y: -88}
+      - - {x: -28, y: 67}
+        - {x: -31, y: 45}
+        - {x: -31, y: -64}
+        - {x: 25, y: -64}
+        - {x: 30, y: -63}
+        - {x: 30, y: 43}
+        - {x: 13, y: 67}
+    - name: spiritsUI_16
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 818
+        width: 183
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -91.5, y: 92}
+        - {x: -91.5, y: -92}
+        - {x: 91.5, y: -92}
+        - {x: 91.5, y: 92}
+      - - {x: -87.5, y: 88}
+        - {x: 87.5, y: 88}
+        - {x: 87.5, y: -88}
+        - {x: -87.5, y: -88}
+      - - {x: -31.5, y: -53}
+        - {x: -11.5, y: -76}
+        - {x: 6.5, y: -76}
+        - {x: 31.5, y: -68}
+        - {x: 31.5, y: 41}
+        - {x: 27.5, y: 61}
+        - {x: -11.5, y: 61}
+        - {x: -31.5, y: 25}
+    - name: spiritsUI_17
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 818
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -92, y: 92}
+        - {x: -92, y: -92}
+        - {x: 92, y: -92}
+        - {x: 92, y: 92}
+      - - {x: -88, y: 88}
+        - {x: 88, y: 88}
+        - {x: 88, y: -88}
+        - {x: -88, y: -88}
+      - - {x: 30, y: 36}
+        - {x: 15, y: 65}
+        - {x: 6, y: 68}
+        - {x: -24, y: 68}
+        - {x: -31, y: 33}
+        - {x: -31, y: -61}
+        - {x: -11, y: -69}
+        - {x: 11, y: -69}
+        - {x: 32, y: -46}
+        - {x: 32, y: 33}
+    - name: spiritsUI_18
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 818
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -92, y: 92}
+        - {x: -92, y: -92}
+        - {x: 92, y: -92}
+        - {x: 92, y: 92}
+      - - {x: -88, y: 88}
+        - {x: 88, y: 88}
+        - {x: 88, y: -88}
+        - {x: -88, y: -88}
+      - - {x: 15, y: 76}
+        - {x: -7, y: 76}
+        - {x: -25, y: 43}
+        - {x: -25, y: -48}
+        - {x: -19, y: -56}
+        - {x: 17, y: -56}
+        - {x: 30, y: -49}
+        - {x: 30, y: 48}
+        - {x: 19, y: 75}
+    - name: spiritsUI_9
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 390
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -92, y: 92}
+        - {x: -92, y: -92}
+        - {x: 92, y: -92}
+        - {x: 92, y: 92}
+      - - {x: -88, y: 88}
+        - {x: 88, y: 88}
+        - {x: 88, y: -88}
+        - {x: -88, y: -88}
+      - - {x: -11, y: 67}
+        - {x: -35, y: 40}
+        - {x: -35, y: -50}
+        - {x: -28, y: -58}
+        - {x: 23, y: -58}
+        - {x: 35, y: -53}
+        - {x: 35, y: 44}
+        - {x: 18, y: 67}
+    - name: spiritsUI_10
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 189
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -92, y: 92}
+        - {x: -92, y: -92}
+        - {x: 92, y: -92}
+        - {x: 92, y: 92}
+      - - {x: -88, y: 88}
+        - {x: 88, y: 88}
+        - {x: 88, y: -88}
+        - {x: -88, y: -88}
+      - - {x: -17, y: 75}
+        - {x: -29, y: 43}
+        - {x: -29, y: -65}
+        - {x: 25, y: -65}
+        - {x: 25, y: 75}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
