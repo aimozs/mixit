@@ -1,4 +1,4 @@
-﻿// <copyright file="SampleDependencies.cs" company="Google Inc.">
+﻿// <copyright file="GPGSDependencies.cs" company="Google Inc.">
 // Copyright (C) 2015 Google Inc. All Rights Reserved.
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,39 +14,113 @@
 //    limitations under the License.
 // </copyright>
 
-using Google.JarResolver;
+namespace GooglePlayGames.Editor
+{
+
+using System;
+using System.Collections.Generic;
 using UnityEditor;
 
-/// <summary>
-/// Sample dependencies file.  Copy this to a different name specific to your
-/// plugin and add the Google Play Services and Android Support components that
-/// your plugin depends on.
-/// </summary>
+/// AdMob dependencies file.
 [InitializeOnLoad]
-public static class SampleDependencies
+public class GPGSDependencies : AssetPostprocessor
 {
-    /// <summary>
-    /// The name of your plugin.  This is used to create a settings file
-    /// which contains the dependencies specific to your plugin.
-    /// </summary>
+#if UNITY_ANDROID
+        /// <summary>Instance of the PlayServicesSupport resolver</summary>
+        public static object svcSupport;
+#endif  // UNITY_ANDROID
 
-/*
-    private static readonly string PluginName = "your_plugin_name";
+        /// Initializes static members of the class.
+        static GPGSDependencies() { RegisterDependencies(); }
 
-    /// <summary>
-    /// Initializes static members of the <see cref="SampleDependencies"/> class.
-    /// </summary>
-    static SampleDependencies()
-    {
+        public static void RegisterDependencies() {
+#if UNITY_ANDROID
+            // Setup the resolver using reflection as the module may not be
+            // available at compile time.
+            Type playServicesSupport = Google.VersionHandler.FindClass(
+                "Google.JarResolver", "Google.JarResolver.PlayServicesSupport");
+            if (playServicesSupport == null) {
+                return;
+            }
+            svcSupport = svcSupport ?? Google.VersionHandler.InvokeStaticMethod(
+                playServicesSupport, "CreateInstance",
+                new object[] {
+                    "GooglePlayGames",
+                    EditorPrefs.GetString("AndroidSdkRoot"),
+                    "ProjectSettings"
+                });
 
-        PlayServicesSupport svcSupport = PlayServicesSupport.CreateInstance(
-                                             PluginName,
-                                             EditorPrefs.GetString("AndroidSdkRoot"),
-                                             "ProjectSettings");
+            Google.VersionHandler.InvokeInstanceMethod(
+                svcSupport, "DependOn",
+                new object[] { "com.google.android.gms", "play-services-games",
+                               PluginVersion.PlayServicesVersionConstraint },
+                namedArgs: new Dictionary<string, object>() {
+                    {"packageIds", new string[] { "extra-google-m2repository" } }
+                });
 
-        // add your dependencies here
+            Google.VersionHandler.InvokeInstanceMethod(
+                svcSupport, "DependOn",
+                new object[] { "com.google.android.gms", "play-services-nearby",
+                               PluginVersion.PlayServicesVersionConstraint },
+                namedArgs: new Dictionary<string, object>() {
+                    {"packageIds", new string[] { "extra-google-m2repository" } }
+                });
 
-        // svcSupport.DependOn("com.google.android.gms", "play-services-base", "8.1+");
-    }
-*/
+            // Auth is needed for getting the token and email.
+            Google.VersionHandler.InvokeInstanceMethod(
+                    svcSupport, "DependOn",
+                    new object[] { "com.google.android.gms", "play-services-auth",
+                         PluginVersion.PlayServicesVersionConstraint },
+                    namedArgs: new Dictionary<string, object>() {
+                        {"packageIds", new string[] { "extra-google-m2repository" } }
+            });
+
+            // if google+ is needed, add it
+            if (GameInfo.RequireGooglePlus())
+            {
+                Google.VersionHandler.InvokeInstanceMethod(
+                        svcSupport, "DependOn",
+                        new object[] { "com.google.android.gms", "play-services-plus",
+                         PluginVersion.PlayServicesVersionConstraint },
+                        namedArgs: new Dictionary<string, object>() {
+                        {"packageIds", new string[] { "extra-google-m2repository" } }
+                });
+            }
+
+            Google.VersionHandler.InvokeInstanceMethod(
+                svcSupport, "DependOn",
+                new object[] { "com.android.support", "support-v4", "23.1+" },
+                namedArgs: new Dictionary<string, object>() {
+                    {"packageIds", new string[] { "extra-android-m2repository" } }
+                });
+#elif UNITY_IOS
+            Type iosResolver = Google.VersionHandler.FindClass(
+                "Google.IOSResolver", "Google.IOSResolver");
+            if (iosResolver == null) {
+                return;
+            }
+            Google.VersionHandler.InvokeStaticMethod(
+                iosResolver, "AddPod",
+                new object[] { "GooglePlayGames" },
+                namedArgs: new Dictionary<string, object>() {
+                    { "version", "5.0+" },
+                    { "bitcodeEnabled", false },
+                });
+#endif  // UNITY_IOS
+        }
+
+        // Handle delayed loading of the dependency resolvers.
+        private static void OnPostprocessAllAssets(
+                string[] importedAssets, string[] deletedAssets,
+                string[] movedAssets, string[] movedFromPath) {
+            foreach (string asset in importedAssets) {
+                if (asset.Contains("IOSResolver") ||
+                    asset.Contains("JarResolver")) {
+                    RegisterDependencies();
+                    break;
+                }
+            }
+        }
+}
+
 }
