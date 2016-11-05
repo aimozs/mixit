@@ -96,7 +96,7 @@ public class BarManager : MonoBehaviour {
 			if(!recipeViewed)
 				recipes[currentRecipe].success += 1;
 			
-			GPGSIds.Save();
+			GameManager.Save();
 		} else {
 			UnityAds.Instance.DisplayAd();
 		}
